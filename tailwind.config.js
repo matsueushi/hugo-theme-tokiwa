@@ -10,11 +10,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'sans': '-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", YuGothic, "Yu Gothic Medium", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif',
-        'serif': '"Source Han Serif JP", "Noto Serif JP", "Hiragino Mincho ProN",  STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", "MS PMincho", "MS Mincho", serif',
-        'cursive': 'FancyTitleFont, "Source Han Serif JP", "Noto Serif JP", "Songti SC", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", "MS PMincho", "MS Mincho", serif',
-        'mono': "'Fira Code','Cascadia Code',Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New','Sarasa Mono JP','Noto Sans JP','monospace', monospace"
-
+        'sans': '"Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif',
+        'serif': '"Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif',
       },
       minHeight: {
         '70vh': '70vh'
