@@ -117,11 +117,58 @@
 		}
 	</style>
 	{{ end }}
+
+	<!-- @font-face for Japanese -->
+	{{ if .Site.Params.useJapeneseFonts}}
+	<style type="text/css" media="screen, print">
+		@font-face {
+			font-family: "FancyTitleFont";
+			font-style: normal;
+			font-display: swap;
+			src: url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff2") | absURL }}') format('woff2'),
+				url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff") | absURL }}') format('woff');
+		}
+
+		/* noto-serif-sc-300 - latin_chinese-simplified */
+		@font-face {
+			font-family: 'Noto Serif JP';
+			font-style: normal;
+			font-weight: 300;
+			font-display: swap;
+			src: local('Noto Serif JP Light'), local('NotoSerifJP-Light'),
+				url('{{"NotoSansJP-Light.woff" | absURL }}') format('woff');
+			/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		}
+
+	/* noto-serif-jp-regular - japanese */
+	@font-face {
+		font-family: 'Noto Serif JP';
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+		src: local('Noto Serif JP'), local('NotoSerifJP-Regular'),
+			url('{{"NotoSansJP-Regular.woff" | absURL }}') format('woff');
+		/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	}
+
+	/* noto-serif-jp-500 - japanese */
+	@font-face {
+		font-family: 'Noto Serif JP';
+		font-style: normal;
+		font-weight: 500;
+		font-display: swap;
+		src: local('Noto Serif JP Medium'), local('NotoSerifJP-Medium'),
+			url('{{"NotoSansJP-Medium.woff" | absURL }}') format('woff');
+		/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	}
+	</style>
+	{{ end }}
 </head>
 
 <body class="bg-gray-100 text-gray-700 font-sans">
 	<div class="p-6 sm:p-10 md:p-16 flex flex-wrap">
-		<header class="w-full md:w-2/5 xl:w-1/2 md:pr-12 lg:pr-20 xl:pr-24 order-1 md:order-1 max-w-2xl">
+		<!-- <header class="w-full md:w-2/5 xl:w-1/2 md:pr-12 lg:pr-20 xl:pr-24 order-1 md:order-1 max-w-2xl"> -->
+		<header class="w-full md:w-2/5 xl:w-1/4 md:pr-12 lg:pr-20 xl:pr-24 order-1 md:order-1 max-w-2xl">
 			<div
 				class="z-50 bg-gray-100 bg-opacity-75 bg-opacity-custom lg:min-w-0.7 max-w-xl md:float-right md:text-right leading-loose tracking-tight md:sticky md:top-0 pt-2">
 				{{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
@@ -131,8 +178,10 @@
 			{{ block "main" . }}{{ end }}
 		</main>
 		<div class="w-full h-0 flex-none order-3"></div>
+		<!-- <aside role="contentinfo"
+			class="w-full md:w-2/5 xl:w-1/2 md:pr-12 lg:pr-20 xl:pr-24 order-4 md:order-3 md:sticky md:bottom-0 self-end max-w-2xl"> -->
 		<aside role="contentinfo"
-			class="w-full md:w-2/5 xl:w-1/2 md:pr-12 lg:pr-20 xl:pr-24 order-4 md:order-3 md:sticky md:bottom-0 self-end max-w-2xl">
+			class="w-full md:w-2/5 xl:w-1/4 md:pr-12 lg:pr-20 xl:pr-24 order-4 md:order-3 md:sticky md:bottom-0 self-end max-w-2xl">
 			<div class="md:float-right md:text-right leading-loose tracking-tight md:mb-2">
 				{{ block "aside" . }}{{ partial "site-aside.html" . }}{{ end }}
 			</div>
