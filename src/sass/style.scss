@@ -6,7 +6,7 @@
 @import "tailwindcss/components";
 
 .heading {
-    @apply font-serif font-medium leading-tight text-eucalyptus-700;
+    @apply font-sans font-medium leading-tight text-eucalyptus-700;
 }
 
 h1 {
@@ -124,6 +124,7 @@ a {
     }
 
     li {
+        margin-left: 1.5rem;
         margin-bottom: 0.25rem;
 
         p {
@@ -133,12 +134,12 @@ a {
 
     ul {
         list-style-type: square;
-        list-style-position: inside;
+        list-style-position: outside;
     }
 
     ol {
         list-style-type: decimal;
-        list-style-position: inside;
+        list-style-position: outside;
     }
 
     li>ol,
