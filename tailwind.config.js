@@ -11,13 +11,10 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'sans': '"Source Han Sans SC", "Source Han Sans CN","Noto Sans CJK SC", "Noto Sans", -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB",  "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif',
-        //For varible font usage sometimes
-        // 'serif': '"Source Han Serif CN Variable", "Source Han Serif SC", "Source Han Serif CN","Noto Serif CJK SC", "Songti SC",  STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif',
-        'serif': '"Source Han Serif SC", "Source Han Serif CN","Noto Serif CJK SC", "Songti SC",  STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif',
-        'cursive': 'FancyTitleFont,"Source Han Serif SC", "Source Han Serif CN",  "Noto Serif CJK SC", "Songti SC", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif',
-        'mono': "'Fira Code','Cascadia Code',Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New','Sarasa Mono SC','Noto Sans CJK SC','monospace', monospace"
-
+        'sans': '"源ノ角ゴシック", "Noto Sans CJK JP", "Noto Sans", -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "ヒラギノ角ゴ ProN", "メイリオ", "ＭＳ Ｐゴシック", sans-serif',
+        'serif': '"源ノ明朝", "Noto Serif CJK JP", "ヒラギノ明朝 ProN", "游明朝", "ＭＳ Ｐ明朝", serif',
+        'cursive': 'FancyTitleFont, "源ノ明朝", "Noto Serif CJK JP", "ヒラギノ明朝 ProN", "游明朝", "ＭＳ Ｐ明朝", serif',
+        'mono': "'Fira Code', 'Cascadia Code', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', 'Sarasa Mono J', 'Noto Sans CJK JP', 'monospace', monospace"
       },
       minHeight: {
         '70vh': '70vh'
