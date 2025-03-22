@@ -35,8 +35,8 @@
 	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
 	{{ template "_internal/google_analytics.html" . }}
 	{{ end }}
-	{{ if or .Params.math .Site.Params.math }}
-	{{ partial "math.html" . }}
+	{{ if .Param "math" }}
+    {{ partialCached "math.html" . }}
 	{{ end }}
 	{{ if ne $.Site.LanguageCode "en"}}
 	<!--pangu.js-->
